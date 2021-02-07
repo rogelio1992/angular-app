@@ -1,3 +1,4 @@
+
 import { MaterialDemoComponent } from './material/material-demo/material-demo.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -14,7 +15,8 @@ const routes: Routes = [
   },
   {
     path: 'home', component: HomeComponent
-  }
+  },
+
 ];
 
 @NgModule({
