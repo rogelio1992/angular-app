@@ -1,3 +1,4 @@
+import { CharacterComponent } from './character/character.component';
 
 import { MaterialDemoComponent } from './material/material-demo/material-demo.component';
 import { NgModule } from '@angular/core';
@@ -8,7 +9,7 @@ const routes: Routes = [
   {
     path: '',
     redirectTo: 'home',
-    pathMatch:'full'
+    pathMatch: 'full'
   },
   {
     path: 'material-demo', component: MaterialDemoComponent
@@ -16,7 +17,9 @@ const routes: Routes = [
   {
     path: 'home', component: HomeComponent
   },
-
+  {
+path: 'character', component: CharacterComponent
+  }
 ];
 
 @NgModule({
