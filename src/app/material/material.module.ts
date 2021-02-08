@@ -39,6 +39,6 @@ import { EstudianteService } from '../shared/services/estudiante.service';
     MatExpansionModule,
     MatIconModule
   ],
-  providers: [EstudianteService],
+  providers: [],
 })
 export class MaterialModule { }
