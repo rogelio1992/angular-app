@@ -1,1 +1,17 @@
-<p>{{character.height}}</p>
+<div *ngFor="let res of result">
+  <mat-expansion-panel [hideToggle]="false" >
+  <mat-expansion-panel-header>
+    <mat-panel-title >{{res.name}}</mat-panel-title>
+  </mat-expansion-panel-header>
+  {{res.gender}}
+  <div>
+    <button mat-fab >
+    <mat-icon>share</mat-icon>
+  </button>
+  <button mat-fab >
+    <mat-icon>mood</mat-icon>
+  </button>
+  </div>
+  </mat-expansion-panel>
+</div>
+

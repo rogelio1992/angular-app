@@ -8,12 +8,16 @@ import { CharactersService } from '../shared/services/characters.service';
   styleUrls: ['./character.component.css']
 })
 export class CharacterComponent implements OnInit {
-  character: Character;
+  result = [];
   constructor(private service: CharactersService) { }
 
   ngOnInit(): void {
-    this.service.getCharacter().subscribe(data => this.character = data);
-      console.log('monada',this.character);
+    this.service.getCharacter().subscribe(data => {
+      console.log(data);
+      this.result = data.results;
+    });
+
+
   }
 
 }

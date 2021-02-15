@@ -7,9 +7,10 @@ import { Character } from '../model/character';
   providedIn: 'root'
 })
 export class CharactersService {
-
+  url = 'https://swapi.dev/api/people/';
   constructor(private httpclient: HttpClient) { }
   getCharacter(): Observable<Character>{
-    return this.httpclient.get<Character>('https://swapi.dev/api/people/1/')
+    return this.httpclient
+                          .get<Character>(this.url);
   }
 }
