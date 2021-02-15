@@ -5,7 +5,7 @@
   </mat-expansion-panel-header>
   {{res.gender}}
   <div>
-    <button mat-fab >
+    <button mat-fab (click)="shareCharacter(res.name)">
     <mat-icon>share</mat-icon>
   </button>
   <button mat-fab >

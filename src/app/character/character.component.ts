@@ -19,5 +19,7 @@ export class CharacterComponent implements OnInit {
 
 
   }
-
+  shareCharacter(character:string) {
+    alert(`Your character ${character} is share `)
+  }
 }
